@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tools box</string>
+    <string name="act_saisie">Page saisie</string>
+    <string name="info_saisie">Pas de texte saisi</string>
+    <string name="cons_saisie">Saisir ici votre texte</string>
+    <string name="btn_valider">Valider</string>
+    <string name="btn_annuler">Annuler</string>
+    <string name="btn_utilisateur">Utilisateur</string>
+    <string name="btn_retour">Retour</string>
+    <string name="btn_ajouter">Ajouter</string>
+    <string name="saisie_date">Saisie date</string>
+    <string name="date_saisie">Pas de date saisie</string>
+    <string name="act_saisie_texte">Saisie d\'un texte</string>
+    <string name="btn_saisie_texte">Page saisie</string>
+    <string name="act_saisie_nom">Saisir le nom</string>
+    <string name="act_saisie_prenom">Saisir le prénom</string>
+    <string name="act_saisie_telephone">Saisir le numéro de téléphone</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="telephone">Téléphone</string>
+    <string name="listeVide">Il n\'y a pas d\'utilisateur</string>
+    <string name="btn_batterie">Information batterie</string>
+    <string name="info_batterie">Information sur la batterie</string>
+    <string name="niv_charge">Niveau de charge</string>
+    <string name="fin_charge">Chargée dans (s)</string>
+    <string name="bat_techno">Technologie</string>
+    <string name="charg_etat">Inconnu</string>
+    <string name="btn_json">Récup. FTP et Lecture JSON</string>
+    <string name="btn_lec_json">Lecture JSon</string>
+    <string name="btn_lec_ftp">Lecture FTP</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

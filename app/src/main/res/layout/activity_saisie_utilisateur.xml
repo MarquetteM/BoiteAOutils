@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieUtilisateur">
+
+    <EditText
+        android:id="@+id/saisieNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/act_saisie_nom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/saisiePrenom"
+        />
+
+    <EditText
+        android:id="@+id/saisiePrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/act_saisie_prenom"
+        app:layout_constraintTop_toBottomOf="@id/saisieNom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/saisieTelephone"
+        />
+
+    <EditText
+        android:id="@+id/saisieTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true"
+        android:hint="@string/act_saisie_telephone"
+        android:maxLength="15"
+        app:layout_constraintTop_toBottomOf="@id/saisiePrenom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="Deprecated" />
+    <Button
+        android:id="@+id/saisieValid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_valider"
+        app:layout_constraintTop_toBottomOf="@id/saisieTelephone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/saisieRetour"
+        />
+    <Button
+        android:id="@+id/saisieRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_retour"
+        app:layout_constraintTop_toBottomOf="@id/saisieTelephone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/saisieValid"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BatterieActivity">
+
+    <!-- utilisation groupes un pour les textes un pour l'affichage -->
+
+    <TextView
+        android:id="@+id/info_batterie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_batterie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_texte_techno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_texte_techno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bat_techno"
+        app:layout_constraintTop_toTopOf="@id/texte_group"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_texte_nivcharge"
+        app:layout_constraintStart_toStartOf="@id/texte_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_techno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="********"
+        app:layout_constraintTop_toTopOf="@id/info_group"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_nivcharge"
+        app:layout_constraintStart_toStartOf="@id/info_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_texte_nivcharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/niv_charge"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_texte_techno"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_texte_etatcharge"
+        app:layout_constraintStart_toStartOf="@id/texte_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_nivcharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="********"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_techno"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_texte_etatcharge"
+        app:layout_constraintStart_toStartOf="@id/info_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_texte_etatcharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charg_etat"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_texte_nivcharge"
+        app:layout_constraintBottom_toTopOf="@id/info_bat_texte_fincharge"
+        app:layout_constraintStart_toStartOf="@id/texte_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_texte_fincharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fin_charge"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_texte_etatcharge"
+        app:layout_constraintBottom_toBottomOf="@id/texte_group"
+        app:layout_constraintStart_toStartOf="@id/texte_group"
+        />
+
+    <TextView
+        android:id="@+id/info_bat_fincharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="********"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_texte_etatcharge"
+        app:layout_constraintBottom_toBottomOf="@id/info_group"
+        app:layout_constraintStart_toStartOf="@id/info_group"
+        />
+
+    <Button
+        android:id="@+id/info_bat_ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_retour"
+        app:layout_constraintTop_toBottomOf="@id/info_bat_texte_fincharge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/texte_group"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        app:constraint_referenced_ids="info_bat_texte_techno,
+            info_bat_texte_nivcharge,info_bat_texte_fincharge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/info_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        app:constraint_referenced_ids="info_bat_techno,info_bat_nivcharge,info_bat_fincharge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/texte_group"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

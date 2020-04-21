@@ -1,0 +1,33 @@
+[
+  {
+    "id":1,
+    "nom":"ROUSSEAU",
+    "prenom":"Jean-Jacques",
+    "adMails":[
+      "jj.rousseau@gmail.com",
+      "rousseau@ecoris.com",
+      "jean-jacques.rousseau@laposte.net"
+    ],
+    "adresse":{
+      "num":25,
+      "rue":"des chemins verts",
+      "cp":73000,
+      "ville":"Chambéry"
+    }
+  },
+  {
+    "id":2,
+    "nom":"HUGO",
+    "prenom":"Victor",
+    "adMails":[
+      "victorhugo@free.com",
+      "victor@ecoris.com"
+    ],
+    "adresse":{
+      "num":254,
+      "rue":"faubourg Montmélian",
+      "cp":73000,
+      "ville":"Chambéry"
+    }
+  }
+]
