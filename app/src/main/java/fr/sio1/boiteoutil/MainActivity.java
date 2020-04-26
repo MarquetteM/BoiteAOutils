@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         txtSaisie = findViewById(R.id.textesaisi);
 
         intent = getIntent(); //Récupère les paramètres passé par l'activité d'où l'on vient
-        //vérifie si l'application appelante a passé une information "texteSaisi"
+        //vérifie si l'application appelante a passée une information "texteSaisi"
         if (intent.hasExtra("texteSaisi")) {
             //récupère le contenu et l'affiche
             Log.i("BTO","on revient de la saisie");
