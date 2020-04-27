@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+// Activité de saisie
 public class SaisieActivity extends AppCompatActivity {
     private Button btSaisie;
     private Button btAnnuler;

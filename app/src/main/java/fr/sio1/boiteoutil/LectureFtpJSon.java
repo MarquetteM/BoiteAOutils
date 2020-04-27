@@ -22,7 +22,7 @@ public class LectureFtpJSon extends AppCompatActivity {
     private EditText listeAffich;
     private RequetteHttp lectureFtp;
     private final int ftpcode = 1;
-    private static final String lien = "http://android.sioecoris.com/index.php";
+    private static final String lien = "https://android.sioecoris.com/index.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
