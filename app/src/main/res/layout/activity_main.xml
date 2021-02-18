@@ -66,6 +66,17 @@
         android:text="@string/btn_batterie"
         android:onClick="batterie"
         app:layout_constraintTop_toBottomOf="@id/btUtilisateur"
+        app:layout_constraintBottom_toTopOf="@id/btReseau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/btReseau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reseau"
+        android:onClick="reseau"
+        app:layout_constraintTop_toBottomOf="@id/btBatterie"
         app:layout_constraintBottom_toTopOf="@id/btJSon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -29,6 +29,9 @@
     <string name="btn_lec_json">Lecture JSon</string>
     <string name="btn_lec_ftp">Lecture FTP</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="info_reseau">Information sur le réseau</string>
+    <string name="btn_reseau">Information réseau</string>
+    <string name="type_reseau">type de réseau</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

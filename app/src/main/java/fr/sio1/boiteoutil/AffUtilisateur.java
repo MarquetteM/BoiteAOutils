@@ -51,8 +51,8 @@ public class AffUtilisateur extends AppCompatActivity implements View.OnClickLis
         }
 //        ArrayAdapter <Utilisateur> arrayAdapter =  new ArrayAdapter<Utilisateur>(this, android.R.layout.simple_list_item_1, utils);
 //        listUtilisateur.setAdapter(arrayAdapter);
-        final ListView listView = (ListView)findViewById(R.id.listUtilisateur);
-        listView.setAdapter(new ListUtilisateursAdap(this, utils));
+//        final ListView listView = (ListView)findViewById(R.id.listUtilisateur);
+        listUtilisateur.setAdapter(new ListUtilisateursAdap(this, utils));
 
         gestionDataBase.close();
 

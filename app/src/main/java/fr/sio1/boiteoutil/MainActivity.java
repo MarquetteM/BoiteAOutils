@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(MainActivity.this, BatterieActivity.class);
         startActivity(intent);
     }
+    public void reseau (View v) {
+        //lance l'activite récupération des informations de la batterie
+        intent = new Intent(MainActivity.this, ReseauActivity.class);
+        startActivity(intent);
+    }
     public void jsonHttp (View v) {
         //lance l'activité récupération information par http et parse fichier json
         intent = new Intent(MainActivity.this, LectureFtpJSon.class);
