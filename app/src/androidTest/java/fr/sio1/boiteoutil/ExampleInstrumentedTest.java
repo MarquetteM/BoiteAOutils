@@ -24,4 +24,8 @@ public class ExampleInstrumentedTest {
 
         assertEquals("fr.sio1.boiteoutil", appContext.getPackageName());
     }
+    public void addition_isCorrect() {
+        assertEquals(4,2+2);
+    }
+
 }

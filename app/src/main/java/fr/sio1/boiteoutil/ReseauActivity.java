@@ -21,6 +21,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 
+import static java.lang.System.getProperty;
+
 
 public class ReseauActivity extends AppCompatActivity {
     private Intent intent;
@@ -108,9 +110,37 @@ public class ReseauActivity extends AppCompatActivity {
         boolean roamingStatus = tm.isNetworkRoaming();
 
 
+        String rep;
+        int repInt;
+
+        rep = Build.MODEL;
+        Log.w("BTO","Build model : "+rep);
+        rep = Build.MANUFACTURER;
+        Log.w("BTO","Build manuf : "+rep);
+        rep = Build.DEVICE;
+        Log.w("BTO","Build device : "+rep);
+        rep = Build.BOARD;
+        Log.w("BTO","Build board : "+rep);
+        rep = Build.HARDWARE;
+        Log.w("BTO","Build hardhare : "+rep);
+        rep = Build.VERSION.CODENAME;
+        Log.w("BTO","Build codename "+rep);
+        rep = Build.VERSION.RELEASE;
+        Log.w("BTO","Build release "+rep);
+        repInt = Build.VERSION.SDK_INT;
+        Log.w("BTO","Build sdk int "+Integer.toString(repInt));
+        rep = Build.VERSION.BASE_OS;
+        Log.w("BTO","Build base OS "+rep);
+        rep = getProperty("os.arch");
+        Log.w("BTO","OS arch "+rep);
+        rep = getProperty("java.vm.version");
+        Log.w("BTO","Java VM version "+rep);
+
 
 
     }
+
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
