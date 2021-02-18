@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,6 +14,8 @@ import android.net.ConnectivityManager;
 import android.net.Network;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.StatFs;
 import android.provider.Telephony;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -20,6 +23,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.io.File;
 
 import static java.lang.System.getProperty;
 
@@ -136,8 +141,22 @@ public class ReseauActivity extends AppCompatActivity {
         rep = getProperty("java.vm.version");
         Log.w("BTO","Java VM version "+rep);
 
-
-
+        //RAM
+        ActivityManager activityManager = (ActivityManager)getSystemService(ACTIVITY_SERVICE);
+        ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+        activityManager.getMemoryInfo(memoryInfo);
+        float totalMem = memoryInfo.totalMem/(1024*1024);
+        float freeMem = memoryInfo.availMem/(1024*1024);
+        Log.w("BTO","Total mem "+Float.toString(totalMem));
+        Log.w("BTO","Free mem "+Float.toString(freeMem));
+        //ROM
+        File path = Environment.getDataDirectory();
+        StatFs stat = new StatFs(path.getPath());
+        float blockSize = stat.getBlockSizeLong();
+        float totalBlock = stat.getBlockCountLong();
+        float blockLibre = stat.
+        Log.w("BTO", "BlockSize "+Float.toString(blockSize));
+        Log.w("BTO", "totalBlock "+Float.toString(totalBlock));
     }
 
 
